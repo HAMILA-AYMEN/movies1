@@ -5,9 +5,10 @@ import Rating from '@material-ui/lab/Rating';
 
 
 function MovieCard({item}) {
-  
+ 
  
   return (
+    
     <Card style={{ width: '18rem' }}>
       <Card.Img id='img' variant="top" src={item.posterUrl}  />
       <Card.Body>
@@ -28,7 +29,7 @@ function MovieCard({item}) {
       </Card.Body>
       
     </Card>
-    
+   
   );
 }
 
