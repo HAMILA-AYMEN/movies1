@@ -4,22 +4,24 @@ import Rating from '@material-ui/lab/Rating';
 
 
 
-function MovieCard({item}) {
+
+function MovieCard({movie}) {
  
  
   return (
     
     <Card style={{ width: '18rem' }}>
-      <Card.Img id='img' variant="top" src={item.posterUrl}  />
+      <Card.Img id='img' variant="top" src={movie.posterUrl}  />
       <Card.Body>
-        <Card.Title >{item.title}</Card.Title>
-        <Card.Text>{item.description}</Card.Text>
+        <Card.Title >{movie.title}</Card.Title>
+        <Card.Text>{movie.description}</Card.Text>
+        
        
        
        
         <Rating
           name="Rating Label"
-          value={item.rate}
+          value={movie.rate}
          
         />
       
